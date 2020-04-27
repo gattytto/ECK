@@ -9,6 +9,10 @@ spec:
   version: 7.2.0
   nodes:
   - nodeCount: 1
+    config:
+      node.master: true
+      node.data: true
+      node.ingest: true
     podTemplate:
       spec:
         containers:
