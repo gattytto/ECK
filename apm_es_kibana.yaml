@@ -6,7 +6,7 @@ metadata:
   name: elasticsearch-sample
   namespace: logs
 spec:
-  version: 7.2.0
+  version: 7.1.0
   nodes:
   - nodeCount: 1
     config:
@@ -36,7 +36,7 @@ metadata:
   name: apm-server-sample
   namespace: logs
 spec:
-  version: 7.2.0
+  version: 7.1.0
   nodeCount: 1
   elasticsearchRef:
     name: "elasticsearch-sample"
@@ -47,7 +47,7 @@ metadata:
   name: kibana-sample
   namespace: logs
 spec:
-  version: 7.2.0
+  version: 7.1.0
   nodeCount: 1
   elasticsearchRef:
     name: "elasticsearch-sample"
