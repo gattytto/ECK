@@ -48,7 +48,7 @@ metadata:
   labels:
     type: local
 spec:
-  storageClassName: eclipseche
+  storageClassName: elasticsearch-data
   capacity:
     storage: 5Gi
   accessModes:
