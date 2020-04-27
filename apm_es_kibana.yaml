@@ -143,7 +143,7 @@ spec:
           - containerPort: 2020
         env:
         - name: FLUENT_ELASTICSEARCH_HOST
-          value: "elasticsearch"
+          value: "elasticsearch-sample-es-http"
         - name: FLUENT_ELASTICSEARCH_PORT
           value: "9200"
         volumeMounts:
