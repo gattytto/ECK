@@ -4,7 +4,7 @@ apiVersion: elasticsearch.k8s.elastic.co/v1alpha1
 kind: Elasticsearch
 metadata:
   name: elasticsearch-sample
-  namespace: elastic-system
+  namespace: logs
 spec:
   version: 7.2.0
   nodes:
@@ -30,7 +30,7 @@ apiVersion: apm.k8s.elastic.co/v1alpha1
 kind: ApmServer
 metadata:
   name: apm-server-sample
-  namespace: elastic-system
+  namespace: logs
 spec:
   version: 7.2.0
   nodeCount: 1
@@ -41,7 +41,7 @@ apiVersion: kibana.k8s.elastic.co/v1alpha1
 kind: Kibana
 metadata:
   name: kibana-sample
-  namespace: elastic-system
+  namespace: logs
 spec:
   version: 7.2.0
   nodeCount: 1
@@ -52,7 +52,7 @@ apiVersion: extensions/v1beta1
 kind: DaemonSet
 metadata:
   name: fluent-bit
-  namespace: elastic-system
+  namespace: logs
   labels:
     k8s-app: fluent-bit-logging
     version: v1
