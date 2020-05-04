@@ -146,6 +146,13 @@ spec:
           value: "elasticsearch-sample-es-http"
         - name: FLUENT_ELASTICSEARCH_PORT
           value: "9200"
+        - name: FLUENT_ELASTICSEARCH_USER
+          value: "elastic"
+        - name: FLUENT_ELASTICSEARCH_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: elasticsearch-sample-es-elastic-user
+              key: data.elastic
         volumeMounts:
         - name: varlog
           mountPath: /var/log
