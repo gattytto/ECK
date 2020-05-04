@@ -152,7 +152,7 @@ spec:
           valueFrom:
             secretKeyRef:
               name: elasticsearch-sample-es-elastic-user
-              key: data.elastic
+              key: "elastic"
         volumeMounts:
         - name: varlog
           mountPath: /var/log
