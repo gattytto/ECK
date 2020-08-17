@@ -30,7 +30,7 @@ subjects:
   name: fluent-bit
   namespace: elastic-system
 ---
-apiVersion: elasticsearch.k8s.elastic.co/v1
+apiVersion: elasticsearch.k8s.elastic.co/v1alpha1
 kind: Elasticsearch
 metadata:
   name: elasticsearch-sample
@@ -87,7 +87,7 @@ spec:
   hostPath:
     path: "/data/elasticsearch"
 ---
-apiVersion: apm.k8s.elastic.co/v1
+apiVersion: apm.k8s.elastic.co/v1alpha1
 kind: ApmServer
 metadata:
   name: apm-server-sample
@@ -98,7 +98,7 @@ spec:
   elasticsearchRef:
     name: "elasticsearch-sample"
 ---
-apiVersion: kibana.k8s.elastic.co/v1
+apiVersion: kibana.k8s.elastic.co/v1alpha1
 kind: Kibana
 metadata:
   name: kibana-sample
