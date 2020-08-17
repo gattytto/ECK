@@ -41,9 +41,9 @@ spec:
   - name: default
     count: 1
     config:
-      node.master: true
-      node.data: true
-      node.ingest: true
+      master: true
+      data: true
+      ingest: true
     podTemplate:
       spec:
         containers:
